@@ -12,6 +12,16 @@
                 <span class="badge-category">
                     {{ salon.category }}
                 </span>
+                <div class="mt-3">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <span class="ms-2">
+                        {{ salon.rating }} (245 opiniones)
+                    </span>
+                </div>
 
                 <h1 class="mt-3">
                     {{ salon.name }}
@@ -49,9 +59,10 @@
                     </div>
                 </div>
 
-                <button class="btn-reserve">
+                <a href="#services" class="btn-reserve text-decoration-none">
                     Reservar Ahora
-                </button>
+                </a>
+                
             </div>
         </div>
     </div>

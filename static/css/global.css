@@ -133,3 +133,10 @@ NAVBAR
 .navbar-toggler:focus{
     box-shadow:none;
 }
+
+/*=====================================================
+=            SCROLL SUAVE
+=====================================================*/
+html{
+    scroll-behavior:smooth;
+}
