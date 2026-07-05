@@ -1,0 +1,31 @@
+<!-- =========================================
+     GRID DE SALONES
+========================================= -->
+
+<section class="salons" id="salones">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap mb-5">
+            <div>
+                <h2 class="fw-bold">Todos los Salones</h2>
+                <p class="text-muted mb-0">
+                    Explora los mejores salones disponibles.
+                </p>
+            </div>
+
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input
+                    id="searchInput"
+                    type="text"
+                    placeholder="Buscar salón...">
+            </div>
+        </div>
+
+        <div class="row g-4">
+            {% for salon in salons %}
+                {% include "components/salon_card.html" %}
+            {% endfor %}
+
+        </div>
+    </div>
+</section>

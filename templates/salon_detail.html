@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ salon.name }}
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/salon_detail.css') }}">
+{% endblock %}
+
+{% block navbar %}
+{% include "components/navbar.html" %}
+{% endblock %}
+
+{% block content %}
+
+{% include "components/salon/banner.html" %}
+
+{% include "components/salon/services.html" %}
+
+{% include "components/salon/gallery.html" %}
+
+{% include "components/salon/reviews.html" %}
+
+{% include "components/salon/info.html" %}
+
+{% include "components/footer.html" %}
+
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/salon_detail.js') }}"></script>
+{% endblock %}

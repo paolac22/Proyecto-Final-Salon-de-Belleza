@@ -1,0 +1,49 @@
+<!-- =========================================
+     NAVBAR
+========================================= -->
+
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="{{ url_for('home') }}">
+            <div class="logo-icon">
+                <i class="bi bi-scissors"></i>
+            </div>
+            <span>BeautyBooking</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ url_for('home') }}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Explorar Salones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mis Reservas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Acerca de</a>
+                </li>
+
+            </ul>
+
+            <form class="d-flex navbar-search">
+
+                <i class="bi bi-search"></i>
+                <input
+                    id="navbarSearch"
+                    type="search"
+                    placeholder="Buscar salón...">
+
+            </form>
+        </div>
+    </div>
+</nav>

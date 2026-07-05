@@ -1,0 +1,57 @@
+proyecto-salon-de-belleza/
+│
+├── app.py
+├── requirements.txt
+│
+├── data/
+│   └── salons.py
+│
+├── static/
+│   │
+│   ├── css/
+│   │   ├── global.css
+│   │   ├── home.css
+│   │   ├── login.css
+│   │   └── salon_detail.css
+│   │
+│   ├── js/
+│   │   ├── home.js
+│   │   ├── login.js
+│   │   └── salon_detail.js
+│   │
+│   ├── img/
+│   │   ├── logo.png
+│   │   ├── hero/
+│   │   ├── salons/
+│   │   ├── icons/
+│   │   └── reviews/
+│   │
+│   └── uploads/
+│
+├── templates/
+│   │
+│   ├── base.html
+│   ├── home.html
+│   ├── login.html
+│   ├── salon_detail.html
+│   │
+│   └── components/
+│       │
+│       ├── navbar.html
+│       ├── footer.html
+│       ├── hero.html
+│       ├── featured.html
+│       ├── categories.html
+│       ├── stats.html
+│       ├── cta.html
+│       ├── salon_card.html
+│       │
+│       └── salon/
+│           ├── banner.html
+│           ├── services.html
+│           ├── reservation_sidebar.html
+│           ├── gallery.html
+│           ├── reviews.html
+│           └── info.html
+│
+└── venv/
