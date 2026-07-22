@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+Reservar
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/booking.css') }}">
+{% endblock %}
+
+{% block navbar %}
+{% include "components/navbar.html" %}
+{% endblock %}
+
+{% block content %}
+
+{% include "components/booking/header.html" %}
+
+{% include "components/booking/calendar.html" %}
+
+{% include "components/footer.html" %}
+
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/booking.js') }}"></script>
+{% endblock %}

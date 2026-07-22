@@ -1,0 +1,142 @@
+/*=========================================
+VARIABLES
+=========================================*/
+
+:root{
+    --primary:#B76E79;
+    --primary-dark:#9F5B68;
+    --secondary:#F8F5F4;
+    --dark:#2D2D2D;
+    --gray:#777;
+    --light:#FFFFFF;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/*=========================================
+RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#FAFAFA;
+    color:var(--dark);
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+section{
+    padding:90px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+    font-weight:700;
+}
+
+.section-title p{
+    color:var(--gray);
+    margin-top:10px;
+}
+
+/*=========================================
+NAVBAR
+=========================================*/
+
+.custom-navbar{
+    background:#FFF;
+    padding:16px 0;
+    box-shadow:var(--shadow);
+}
+
+.navbar-brand{
+    font-size:1.4rem;
+    font-weight:700;
+    color:var(--dark);
+    gap:.8rem;
+}
+
+.logo-icon{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    background:var(--primary);
+    color:#FFF;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.3rem;
+}
+
+.navbar-brand:hover{
+    color:var(--primary);
+}
+
+.nav-link{
+    color:var(--dark);
+    font-weight:500;
+    margin:0 .4rem;
+    transition:.3s;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color:var(--primary);
+}
+
+.navbar-search{
+    background:#F4F4F4;
+    padding:.55rem 1rem;
+    border-radius:40px;
+    align-items:center;
+    gap:.6rem;
+}
+
+.navbar-search i{
+    color:#999;
+}
+
+.navbar-search input{
+    border:none;
+    background:none;
+    outline:none;
+    width:180px;
+}
+
+.navbar-toggler{
+    border:none;
+    font-size:1.4rem;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+/*=====================================================
+=            SCROLL SUAVE
+=====================================================*/
+html{
+    scroll-behavior:smooth;
+}

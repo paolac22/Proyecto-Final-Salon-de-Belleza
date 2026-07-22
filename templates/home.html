@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block navbar %}
+    {% include "components/navbar.html" %}
+{% endblock %}
+
+{% block content %}
+
+    {% include "components/hero.html" %}
+
+    {% include "components/stats.html" %}
+
+    {% include "components/categories.html" %}
+
+    {% include "components/featured.html" %}
+
+    {% include "components/salon_grid.html" %}
+
+    {% include "components/cta.html" %}
+
+    {% include "components/footer.html" %}
+
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/home.js') }}"></script>
+{% endblock %}

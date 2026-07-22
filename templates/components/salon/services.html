@@ -1,0 +1,58 @@
+<!--=====================================================
+=            SERVICIOS
+======================================================-->
+
+<section class="services-section" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8"> 
+                <h2 class="section-title mb-5">
+                    Servicios Disponibles
+                </h2>
+
+                {% for category,items in services.items() %}
+
+                <div class="service-category">
+                    <h3>
+                        {{ category }}
+                    </h3>
+
+                    {% for service in items %}
+
+                    <div class="service-card">
+                        <div>
+                            <h5>
+                                {{ service.name }}
+                            </h5>
+
+                            <small>
+                                {{ service.time }}
+                            </small>
+                        </div>
+
+                        <div class="service-right">
+                            <span class="price">
+                                ${{ service.price }}
+                            </span>
+
+                            <button
+                                class="add-service"
+                                data-name="{{ service.name }}"
+                                data-price="{{ service.price }}"
+                                data-time="{{ service.time }}">
+                                Agregar
+                            </button>
+
+                        </div>
+
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-lg-4">
+                {% include "components/salon/reservation_sidebar.html" %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,45 @@
+<!--=====================================================
+=            CALENDARIO
+======================================================-->
+
+<section class="calendar-section">
+
+    <div class="container">
+
+        <div class="calendar-card">
+
+            <h2>
+
+                Selecciona un día
+
+            </h2>
+
+            <div class="days-grid">
+
+                {% for day in range(1,31) %}
+
+                <button class="day-btn">
+
+                    {{ day }}
+
+                </button>
+
+                {% endfor %}
+
+            </div>
+
+            <div class="text-center mt-5">
+
+                <button class="btn-next">
+
+                    Continuar
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
