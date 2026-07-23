@@ -8,16 +8,22 @@ from flask import (
     flash,
 )
 import requests
-
+import os
 from data.salons import salons
 from data.services import services
 
 
 app = Flask(__name__)
-app.secret_key = "salon-belleza-clave-secreta"
 
-API_URL = "http://127.0.0.1:8001"
+app.secret_key = os.getenv(
+    "SECRET_KEY",
+    "salon-belleza-clave-secreta",
+)
 
+API_URL = os.getenv(
+    "API_URL",
+    "http://127.0.0.1:8000",
+).rstrip("/")
 
 @app.route("/")
 @app.route("/home")
